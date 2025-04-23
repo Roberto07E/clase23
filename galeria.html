@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Lugares Turísticos Escamilla</title>
+  <link rel="stylesheet" href="fijo.css">
+</head>
+<body>
+
+  <!-- SLIDER INICIO -->
+  <div class="slider">
+    <div class="slides">
+      <!-- Radio buttons -->
+      <input type="radio" name="radio-btn" id="radio1" checked>
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+  
+      <!-- Slides -->
+      <div class="slide" id="slide1">
+        <img src="img/puerto_la_libertad.jpg" alt="Puerto La Libertad">
+      </div>
+      <div class="slide" id="slide2">
+        <img src="img/santa_ana.jpg" alt="Santa Ana">
+      </div>
+      <div class="slide" id="slide3">
+        <img src="img/salvador_del_mundo.jpg" alt="Salvador del Mundo">
+      </div>
+  
+      <!-- Manual navigation -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+  </div>
+  <!-- SLIDER FIN -->
+
+  <h1>Galería de Lugares Turísticos Escamilla</h1>
+  <div class="galeria">
+    <div class="tarjeta">
+      <img src="img/ahuachapan.jpg" alt="Iglesia de Ahuachapan">
+      <p>Iglesia de Ahuachapan</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/antiguo_cuscatlan.jpg" alt="Iglesia de Antiguo Cuscatlan">
+      <p>Iglesia de Antiguo Cuscatlan</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/catedral.jpg" alt="Catedral de San Salvador">
+      <p>Catedral de San Salvador</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/decameron.jpg" alt="Hotel Decameron">
+      <p>Hotel Decameron</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/lago_ilopango.jpg" alt="Lago de Ilopango">
+      <p>Lago de Ilopango</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/los_ilustres.jpg" alt="Cementerio de los Ilustres">
+      <p>Cementerio de los Ilustres</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/puerto_la_libertad.jpg" alt="Puerto de la Libertad">
+      <p>Puerto de la Libertad</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/puerto_triunfo.jpg" alt="Puerto El Triunfo">
+      <p>Puerto El Triunfo</p>
+    </div>
+    <div class="tarjeta">
+      <img src="img/santa_ana.jpg" alt="Catedral de Santa Ana">
+      <p>Catedral de Santa Ana</p>
+    </div>
+  </div>
+
+  <script>
+    let counter = 1;
+  
+    setInterval(() => {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 3) {
+        counter = 1;
+      }
+    }, 5000); 
+  </script>
+  </body>
+  </html>
+  
+
+</body>
+</html>
+
+
